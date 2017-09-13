@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">      
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- jQuery below this line -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- My Javascript file -->
+	<script src="{% static 'public/javascript/home.js' %}"></script>
+	<!-- my css file -->
+	<link rel="stylesheet" href="{% static 'public/css/home.css' %}"media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+	<div class="fill">
+		<div class="header container">
+			
+			<img src="{% static "public/img/shieldnavlogo.png" %}" alt="logo"/>
+			<!-- Modal Trigger -->
+			<a class="modal-trigger" href="#login">Login</a>
+
+			<!-- Modal Structure -->
+			<div id="login" class="modal">
+				<div class="modal-content">
+					<form>
+						<label>Please Enter The Password</label>
+						<input type="password" name="password">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+				</div>
+			</div>
+
+			<a href="/demo_request">REQUEST A DEMO</a>
+	          
+		</div>
+		<div class="container section_1">
+			<h1>Tracking every dollar</h1>
+			<h1>through your door</h1>
+		</div>
+		<div>
+			<img class="section_1" src="{% static "public/img/homeback-2@3x.png" %}" alt="geometric lines"/>
+			<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+		</div>
+	</div>
+	<div class="section_2 container">
+		<h2>We are the first one-stop compliance system</h2>
+		<p>Shield Compliance is one-of-a-kind. Our platform asses every risk, regulating the transactions of both your customers and theirs. Not only will we notify you of non-compliant activity, but we will immediately act as well to ensure that you are not accountable for potential fraud.</p>
+		<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+	</div>
+	<div class="section_3 fill">
+		<div class="container">
+			<h3>Our platform minimizes risk across all touchpoints </h3>
+			<div class="row">
+				<div class="col s3">
+					<img src="{% static "public/img/processlogo-2@3x.png" %}" alt="process logo">
+					<h4>Process</h4>
+				</div>
+				<div class="col s3">
+					<img src="{% static "public/img/monitorlogo-2@3x.png" %}" alt="monitor logo">
+					<h4>Monitor</h4>
+				</div>
+				<div class="col s3">
+					<img src="{% static "public/img/controllogo-2@3x.png" %}" alt="control logo">
+					<h4>Control</h4>
+				</div>
+				<div class="col s3">
+					<img src="{% static "public/img/scalelogo-2@3x.png" %}" alt="scale logo">
+					<h4>Scale</h4>
+				</div>
+				<div>
+					<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section_4 container">
+		<div class="row">
+			<div class="col s6">
+				<h4>Your Opportunity</h4>
+				<p>Cash-intensive businesses are a risk due to their complexity - but they don’t have to be. Your bank can leverage CIB cash-flow through upholding the highest level of compliance with Shield’s innovative platform. </p>
+				<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+			</div>
+			<div class="col s6">
+				<img src="{% static "public/img/opportunitypic@3x.jpg" %}" alt="opportunity pic"">
+			</div>
+		</div>
+	</div>
+	<div class="section_5 fill">
+		<div class="container">
+			<h2>We'd like to help you grow your business</h2>
+			<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+		</div>
+	</div>
+	<div class="footer container">
+		<div class="row">
+			<div class="col s4">
+				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
+				<p>Email: info@shieldbanking.com</p>
+				<p>Phone: 123 456 7890</p>
+			</div>
+			<div class="col s4">
+				<a href="#!">LOGIN</a>
+				<a href="#!">CONTACT</a>
+				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
+				<p>© 2017 Shield Compliance. All Rights Reserved</p>
+				<p>Designed by Hallee May, LLC</p>
+			</div>
+			<div class="col s4">
+				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<a href="#!">Privacy Policy</a>
+				<a href="#!">Terms of Use</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*CSS Resets*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.fill {
+  background-color: #385072; }
+
+img.section_1 {
+  width: 100%; }
+
+.section_4 img {
+  width: 100%; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,19 @@
+/*CSS Resets*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+$shield-logo-blue: #385072;
+
+.fill {
+	background-color: $shield-logo-blue;
+}
+
+img.section_1 {
+	width:100%;
+}
+
+.section_4 img {
+	width: 100%;
+}
