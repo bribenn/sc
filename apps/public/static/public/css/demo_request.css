@@ -5,4 +5,9 @@
 .fill {
   background-color: #385072; }
 
+.keyboard-background {
+  background: url(../img/clip-group@3x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /*# sourceMappingURL=demo_request.css.map */
