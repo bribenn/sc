@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home_2</title>
+	<title>Home</title>
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">      
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- jQuery below this line -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- My Javascript file -->
+	<script src="{% static 'private/javascript/home_2.js' %}"></script>
+	<!-- my css file -->
+	<link rel="stylesheet" href="{% static 'private/css/home_2.css' %}"media="screen" title="no title"  charset="utf-8">
+</head>
+<body>
+		<div class="nav container">
+		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
+		  <ul class="right hide-on-med-and-down">
+		    <li><a href="/features">Features</a></li>
+		    <li><a href="/expertise">Expertise</a></li>
+		    <li><a href="/partner">Partner</a></li>
+		    <li><a href="/about">About</a></li>
+		    <li><a href="#!">Logout</a></li>
+		  </ul>
+		</div>
+</body>
+</html>

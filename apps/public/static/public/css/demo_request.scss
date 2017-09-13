@@ -10,7 +10,13 @@ $shield-logo-blue: #385072;
 }
 
 .keyboard-background {
-	background: url(../img/clip-group@3x.jpg);
+	background: url("../img/clip-group@3x.jpg");
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    height: 364px;
+    width: 100%; 
+}
+
+.form {
+	border: 2px solid gray;
 }
