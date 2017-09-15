@@ -1,0 +1,23 @@
+/*CSS Resets*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.fill {
+  background-color: #385072; }
+
+nav ul a {
+  color: #3f4b5c; }
+
+img.section_1 {
+  width: 100%;
+  margin-top: -315px; }
+
+nav ul a:hover {
+  background-color: white;
+  color: #afaeaf; }
+
+.section_4 img {
+  width: 75%; }
+
+/*# sourceMappingURL=home_2.css.map */

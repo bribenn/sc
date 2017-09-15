@@ -1,0 +1,16 @@
+/*CSS Resets*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.fill {
+  background-color: #385072; }
+
+nav ul a {
+  color: #3f4b5c; }
+
+nav ul a:hover {
+  background-color: white;
+  color: #afaeaf; }
+
+/*# sourceMappingURL=main.css.map */
