@@ -10,6 +10,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- My Javascript file -->
+	<script src="{% static 'public/javascript/home.js' %}"></script>
 	<!-- specific css file -->
 	<link rel="stylesheet" href="{% static 'public/css/demo_request.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
@@ -76,6 +78,13 @@
 			</div>
 		</div>
 	</div>
+	<div class="fill footer_line">
+		<!-- Modal Trigger -->
+		<ul class="center">
+			<a class="modal-trigger" href="#login">LOGIN</a>
+			<a href="#!">CONTACT</a>
+		</ul>
+	</div>
 	<div class="footer container">
 		<div class="row">
 			<div class="col s4">
@@ -84,8 +93,6 @@
 				<p>Phone: 123 456 7890</p>
 			</div>
 			<div class="col s4">
-				<a href="#!">LOGIN</a>
-				<a href="#!">CONTACT</a>
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
 				<p>© 2017 Shield Compliance. All Rights Reserved</p>
 				<p>Designed by Hallee May, LLC</p>

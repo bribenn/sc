@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Home_2</title>
-	<title>Home</title>
 	{% load staticfiles %}
 	<meta name="viewport" content="width=device-width, initial-scale=1">      
 	<!-- Compiled and minified CSS -->
@@ -15,9 +14,11 @@
 	<script src="{% static 'private/javascript/home_2.js' %}"></script>
 	<!-- my css file -->
 	<link rel="stylesheet" href="{% static 'private/css/home_2.css' %}"media="screen" title="no title"  charset="utf-8">
+	<link rel="stylesheet" href="{% static 'private/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
-		<div class="nav container">
+	<nav class="white z-depth-0">
+		<div class="nav-wrapper container">
 		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
 		  <ul class="right hide-on-med-and-down">
 		    <li><a href="/features">Features</a></li>
@@ -27,5 +28,130 @@
 		    <li><a href="#!">Logout</a></li>
 		  </ul>
 		</div>
+	</nav>
+	<div class="container section_1">
+		<h1>Tracking every dollar</h1>
+		<h1>through your door</h1>
+		<a class="learn_btn_small right" href="/about">LEARN MORE</a>
+	</div>
+	<div>
+		<img class="section_1" src="{% static "private/img/background-base@3x.png" %}" alt="geometric lines"/>
+	</div>
+	<div class="fill section_2">
+		<div class="container">
+			<img src="{% static "private/img/shieldglobe@3x.png" %}" alt="shield globe"/>
+			<h2>Proactive transparent compliance</h2>
+			<p>Shield uniquely not only alerts you of inconsistencies and risks, but act on them immediately. We save you time and stress in the complex CIB market.</p>
+		</div>
+	</div>
+	<div class="container section_3">
+		<h3>Our platform minimizes risk across all touchpoints </h3>
+		<div class="row">
+			<div class="col s3">
+				<img src="{% static "private/img/processicon@2x.png" %}" alt="process icon">
+				<h3>Process</h3>
+				<p>One-click compliance</p>
+				<a href="#!">Learn More ></a>
+			</div>
+			<div class="col s3">
+				<img src="{% static "private/img/monitoricon@3x.png" %}" alt="monitor icon">
+				<h3>Monitor</h3>
+				<p>Proactive transparency</p>
+				<a href="#!">Learn More ></a>
+			</div>
+			<div class="col s3">
+				<img src="{% static "private/img/controlicon@3x.png" %}" alt="control icon">
+				<h3>Control</h3>
+				<p>Automatic case filing</p>
+				<a href="#!">Learn More ></a>
+			</div>
+			<div class="col s3">
+				<img src="{% static "private/img/scaleicon@3x.png" %}" alt="scale icon">
+				<h3>Scale</h3>
+				<p>A cloud based solution</p>
+				<a href="#!">Learn More ></a>
+			</div>
+		</div>
+	</div>
+	<div class="fill section_4">
+		<div class="row container">
+			<div class="col s6">
+				<img src="{% static "private/img/group@3x.png" %}" alt="services list">
+			</div>
+			<div class="col s6">
+				<h3>Enhanced due diligence</h3>
+				<p>We track dollars through not only your door, but also the doors of dispensaries. With every transaction, our platform cross-references for dispensary inventory and notifies you of tax liability.</p>
+				<a href="#!">Learn More</a>
+			</div>
+		</div>
+	</div>
+	<div class="container section_5">
+		<div class="row">
+			<div class="col s6">
+				<h3>Your trusted Partner</h3>
+				<p>We know the cash-intensive business industry is difficult to navigate, and that’s why we are here for you. We offer training for our platform, and our knowledge of compliance law is second to none.</p>
+				<a href="#!">Learn More</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Leading our industry</h3>
+		<div class="row">
+			<div class="col s3">
+				<h1>1</h1>
+				<h5>Unified Platform</h5>
+				<p>Tokenized transactions and blockchain integration means your compliance system can be a centralized source of risk evaluation</p>
+			</div>
+			<div class="col s3">
+				<h1>30</h1>
+				<h5>Years of experience</h5>
+				<p>We aren’t the typical tech entrepreneurs because of our decades of experience in the banking industry</p>
+			</div>
+			<div class="col s3">
+				<h1>12+</h1>
+				<h5>regulations covered</h5>
+				<p>Partnering with Shield means forming a long-term relationship with a compliance company pursuing all types of risks</p>
+			</div>
+			<div class="col s3">
+				<h1>3</h1>
+				<h5>years of development</h5>
+				<p>Our developers have comitted thousands of hours to building our proprieatary platform, ensuring every regulation is accounted for.</p>
+			</div>
+		</div>
+		<div>
+			<ul class="center">
+			<a href="/about">Learn More</a>
+			</ul>
+		</div>
+	</div>
+	<div class="fill footer_line">
+		<ul class="center">
+			<a href="/features">features</a>
+			<a href="/expertise">expertise</a>
+			<a href="/partner">partner</a>
+			<a href="/about">about</a>
+		</ul>
+	</div>
+	<div class="footer container">
+		<div class="row">
+			<div class="col s4">
+				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
+				<p>Email: info@shieldbanking.com</p>
+				<p>Phone: 123 456 7890</p>
+			</div>
+			<div class="col s4">
+				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
+				<p>© 2017 Shield Compliance. All Rights Reserved</p>
+				<p>Designed by Hallee May, LLC</p>
+			</div>
+			<div class="col s4">
+				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<a href="#!">Privacy Policy</a>
+				<a href="#!">Terms of Use</a>
+			</div>
+		</div>
+	</div>
+
+
 </body>
 </html>

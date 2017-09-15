@@ -2,8 +2,41 @@
 <html>
 <head>
 	<title>Expertise</title>
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">      
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- jQuery below this line -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- My Javascript file -->
+	<!-- <script src="{% static 'private/javascript/features.js' %}"></script> -->
+	<!-- my css files -->
+	<!-- <link rel="stylesheet" href="{% static 'private/css/expertise.css' %}"media="screen" title="no title"  charset="utf-8"> -->
+	<link rel="stylesheet" href="{% static 'private/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
-	Expertise Page
+	<nav class="white z-depth-0">
+		<div class="nav-wrapper container">
+		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
+		  <ul class="right hide-on-med-and-down">
+		    <li><a href="/features">Features</a></li>
+		    <li><a href="/expertise">Expertise</a></li>
+		    <li><a href="/partner">Partner</a></li>
+		    <li><a href="/about">About</a></li>
+		    <li><a href="/logout">Logout</a></li>
+		  </ul>
+		</div>
+	</nav>
+	<div class="background-cover">
+	<div class="row row-height">
+		<div class="col s6 opacity">
+			<h1>Our Expertise</h1>
+			<p>While other compliance systems only grant a handful of non-proprietary features, Shield’s platform is the only proactive compliance network that eliminates nearly every source of risk in CIB banking.</p>
+		</div>
+	</div>
+	</div>
+	
 </body>
 </html>

@@ -6,5 +6,6 @@ urlpatterns = [
 	url(r'^features$', views.features),
 	url(r'^expertise$', views.expertise), 
 	url(r'^partner$', views.partner),
-	url(r'^about$', views.about)   
+	url(r'^about$', views.about),
+	url(r'^logout$', views.logout)  
 ]
