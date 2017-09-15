@@ -13,7 +13,7 @@
 	<!-- My Javascript file -->
 	<!-- <script src="{% static 'private/javascript/features.js' %}"></script> -->
 	<!-- my css files -->
-	<!-- <link rel="stylesheet" href="{% static 'private/css/expertise.css' %}"media="screen" title="no title"  charset="utf-8"> -->
+	<link rel="stylesheet" href="{% static 'private/css/expertise.css' %}"media="screen" title="no title"  charset="utf-8">
 	<link rel="stylesheet" href="{% static 'private/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
@@ -30,13 +30,153 @@
 		</div>
 	</nav>
 	<div class="background-cover">
-	<div class="row row-height">
-		<div class="col s6 opacity">
-			<h1>Our Expertise</h1>
-			<p>While other compliance systems only grant a handful of non-proprietary features, Shield’s platform is the only proactive compliance network that eliminates nearly every source of risk in CIB banking.</p>
+		<div class="row row-height">
+			<div class="col s6 opacity">
+				<div class="container right">
+					<h1>Our Expertise</h1>
+					<p>We are conscious of every possible risk in this incredibly complex market. Our platform reduces risk because it accounts for all laws that regulate dispensaries, improving the welfare of banks providing CIB banking services.</p>
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div>
+			<h2>Cole Memo transformed the CIB banking industry</h2>
+			<div class="row">
+				<div class="col s4">
+					<img src="{% static "private/img/colememoicon@2x.png" %}" alt="cole memo icon">
+				</div>
+				<div class="col s8">
+					<p>The Cole Memo is an extension of the Controlled Substances Act that prevents distribution of substances to minors, use of substances on federal property, money laundering, and many other illegal activities. Our software ensures that all activity abides with the entirety of the Cole Memo through detailed background checks with those purchasing, selling, and growing substances. </p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p class="center">The Cole Memo aims to prevent:</p>
+			<div class="row">
+				<ul class="col s6">
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Distribution to minors</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Sale to criminals</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Dispersion across state lines</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Drug trafficking</li>
+				</ul>
+				<ul class="col s6">
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Drug-related violence</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Driving under the influence</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Cultivation on public land</li>
+					<li><img src="{% static "private/img/cross@2x.png" %}" alt="cross icon"">Use on federal property</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h2>BSA/AML pillars of service</h2>
+			<div class="row">
+				<img class="col s4" src="{% static "private/img/pillarsicon@3x.png" %}" alt="pillars icon">
+				<div class="col s8">
+					<ul>
+						<li>1 &nbsp &nbsp Designation of BSA compliance officer</li>
+						<li>2 &nbsp &nbsp Development of internal policies, procedures and controls</li>
+						<li>3 &nbsp &nbsp Ongoing, relevant training of employees</li>
+						<li>4 &nbsp &nbsp Independent testing and review</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col s8 offset-s4">
+						<p>Our platform complies with the pillars of the Bank Secrecy Act through our automatic SAR flagging system that will notify you of any non-compliant transactions. Our internal controls, training program, testing center, and designated officer BSA/AML officer all work together to prevent laundering.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Blockchain technology groups critical information</h2>
+			<img src="{% static "" %}" alt="blockchain image">
+		</div>
+		<div class="row">
+			<div class="col s6">
+				<p>Blockchain ensures that all parties are accountable and tagged in our platform. This creates consistency throughout our monitoring process so that there are no mistakes when comparing transactions.</p>
+			</div>
+			<div class="col s6">
+				<p>As an extension of due diligence, the Shield Blockchain system enables simple monitoring of inventory and connection to regulators to address SAR-flagged risks.</p>
+			</div>
+		</div>
 	</div>
+	<!-- escaping the container for blue background -->
+	<div class="fill">
+		<div class="container">
+			<h4>Shield complies with both federal and state regulatory agencies</h4>
+			<div class="row">
+				<div class="col s3 offset-s3">
+					<img src="{% static "private/img/fin-ce-nlogo@2x.png" %}" alt="finCEN logo">
+					<h4>FinCEN</h4>
+					<p>The Financial Crimes Enforcement Network creates the infrastructure for the enforcement of the critical Cole Memo. Since 2012, FinCEN has increased specificity of reporting, creating SARs and CTRs.</p>
+				</div>
+				<div class="col s3">
+					<img src="{% static "private/img/ofa-cicon@2x.png" %}" alt="OFAC logo">
+					<h4>OFAC</h4>
+					<p>The OFAC regulates international narcotics trafficking, including implementing elements of the Patriot Act and BSA/AML regulations.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h4>Shield complies with many other industry standards...</h4>
+		<div class="row">
+			<div class="col s4">
+				<h4>HIPAA</h4>
+				<p>The Health Insurance Portability and Accountability Act safeguards healthcare incformation stored in a digital format. HIPAA covers nondisclosure and confidential data transmission standards. </p>
+			</div>
+			<div class="col s4">
+				<h4>KYC</h4>
+				<p>Banks are liable for the illegal activities of MJ consumers. Shield’s enhanced due diligence measures ensure that our banks were blind to wrongdoing if prosecuted.</p>
+			</div>
+			<div class="col s4">
+				<h4>Patriot Act</h4>
+				<p>The Patriot Act thwarts terrorism, but also includes measures to prevent international money laundering. The act amended existing BSA/AML laws and solidified the position of FinCEN.</p>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="row">
+			<div class="col s4">
+				<h4>BSA/AML</h4>
+				<p>Anti-money laundering regulations are strict, but Shield has created a new level of transparency through our enhanced due diligence features at every step of the transaction tracking.</p>
+			</div>
+			<div class="col s4">
+				<h4>CSA</h4>
+				<p>The Controlled Substances Act includes specific stipulations on the handling of controlled substances. Complying with the Cole Memo and CSA is critical to preventing illegal activity.</p>
+			</div>
+			<div class="col s4">
+				<h4>SAAE 16</h4>
+				<p>SAAE 16 is an auditing standard for medical claims processors. Our audit material generator meets these standards, allowing for stress-free audit preparation.</p>
+				<p>Coming soon: SAAE 18</p>
+			</div>
+		</div>
+	</div>
+	<div class="fill footer_line">
+		<ul class="center">
+			<a href="/features">features</a>
+			<a href="/expertise">expertise</a>
+			<a href="/partner">partner</a>
+			<a href="/about">about</a>
+		</ul>
+	</div>
+	<div class="footer container">
+		<div class="row">
+			<div class="col s4">
+				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
+				<p>Email: info@shieldbanking.com</p>
+				<p>Phone: 123 456 7890</p>
+			</div>
+			<div class="col s4">
+				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
+				<p>© 2017 Shield Compliance. All Rights Reserved</p>
+				<p>Designed by Hallee May, LLC</p>
+			</div>
+			<div class="col s4">
+				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<a href="#!">Privacy Policy</a>
+				<a href="#!">Terms of Use</a>
+			</div>
+		</div>
 	
 </body>
 </html>

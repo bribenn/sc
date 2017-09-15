@@ -2,8 +2,131 @@
 <html>
 <head>
 	<title>About</title>
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">      
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	<!-- jQuery below this line -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<!-- My Javascript file -->
+	<!-- <script src="{% static 'private/javascript/features.js' %}"></script> -->
+	<!-- my css files -->
+	<link rel="stylesheet" href="{% static 'private/css/about.css' %}"media="screen" title="no title"  charset="utf-8">
+	<link rel="stylesheet" href="{% static 'private/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
-About Page
+	<nav class="white z-depth-0">
+		<div class="nav-wrapper container">
+		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
+		  <ul class="right hide-on-med-and-down">
+		    <li><a href="/features">Features</a></li>
+		    <li><a href="/expertise">Expertise</a></li>
+		    <li><a href="/partner">Partner</a></li>
+		    <li><a href="/about">About</a></li>
+		    <li><a href="/logout">Logout</a></li>
+		  </ul>
+		</div>
+	</nav>
+	<div class="background-cover">
+		<div class="row row-height">
+			<div class="col s6 opacity">
+				<div class="container right">
+					<h1>Our Vision</h1>
+					<p>Shield Compliance minimizes risk using automation and network solutions for high-risk cash intensive  businesses. Our clients see the immediate value of our comprehensive systems in enhancing bank and customer-end purchase experiences.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s6">
+				<img src="{% static "private/img/ideaicon@2x.png" %}" alt="lightbulb">
+			</div>
+			<div class="col s6">
+				<h3>An idea</h3>
+				<p>Since electronic networks transformed the financial markets, there’s no reason that compliance can’t be transformed by modern algorithms and computing innovations. Shield Compliance tackles old and new regulations with the latest technology, creating a heightened level of efficiency unapproached by existing compliance systems.</p>
+				<p></br>We make high-risk a concern of the past.</p>
+			</div>
+		</div>
+	</div>
+	<div class="fill">
+		<div class="row container">
+			<div class="col s6">
+				<h3>How we started</h3>
+				<p>Our founders have lived and breathed this industry for over 30 years, gaining an insider-level of knowledge unmatched by other compliance companies. This industry experience makes our platform the perfectly designed product for banks’ and high-risk merchants’ needs.</p>
+
+				<p></br>We developed, refined and enhanced our platform for three years before coming to market. This period of work represents our detail-oriented nature and the extensiveness of the platform. Every feature is made to comply with the complex assortment of regulations surrounding high-risk banking.
+				</p>
+			</div>
+			<div class="col s6">
+				<div class="col s6">
+					<h1>30+</h1>
+					<h1>2014</h1>
+					<h1>3</h1>
+				</div>
+				<div class="col s6">
+					<h4>years of experience</h4>
+					<h4>year founded</h4>
+					<h4>years of development</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div>
+			<h3>Our team</h3>
+			<p>Shield Compliance brings together technical expertise with industry experience. Our founders’ experience in client-side operations and network logistics laid the groundwork for understanding and highlighting the opportunity for a proactive compliance system. To us, entrepreneurial drive comes from a place of extensive industry knowledge and experience in driving forward network efficiency</p>
+		</div>
+		<div class="row">
+			<div class="col s6">
+				<img src="{% static "private/img/noah.png" %}" alt="Noah Carey">
+				<div>
+					<h4>Noah Carey</h4>
+					<h5>Co-Founder and CEO</h5>
+					<p>With 30+ years as a manager in Financial Risk, Noah Carey has provided risk management solutions for Wall Street clients including Goldman Sachs, ABN-Amro Bank and the Chicago Mercantile Exchange.</p>
+				</div>
+			</div>
+			<div class="col s6">
+				<img src="{% static "private/img/bill.png" %}" alt="Bill Erwin">
+				<div>
+					<h4>Bill Erwin</h4>
+					<h5>Founding Partner</h5>
+					<p>Bill Erwin has been in Asset and Risk Management for 30+ years with over 15 years in the largest Fortune 50 insurance companies and investment banks in the world.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h4 class="col s3">Our developers</h4>
+			<p class="col s9">For over three years, our developers have been building and testing Shield to improve security measures and increase network efficiency. Shield is not a static project; our team continues to enhance and expand many aspects of our platform each day. Our developers bring years of programming and software development experience to create a reliable and innovative product.</p>
+		</div>
+	</div>
+	<div class="fill footer_line">
+		<ul class="center">
+			<a href="/features">features</a>
+			<a href="/expertise">expertise</a>
+			<a href="/partner">partner</a>
+			<a href="/about">about</a>
+		</ul>
+	</div>
+	<div class="footer container">
+		<div class="row">
+			<div class="col s4">
+				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
+				<p>Email: info@shieldbanking.com</p>
+				<p>Phone: 123 456 7890</p>
+			</div>
+			<div class="col s4">
+				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
+				<p>© 2017 Shield Compliance. All Rights Reserved</p>
+				<p>Designed by Hallee May, LLC</p>
+			</div>
+			<div class="col s4">
+				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<a href="#!">Privacy Policy</a>
+				<a href="#!">Terms of Use</a>
+			</div>
+		</div>
 </body>
 </html>

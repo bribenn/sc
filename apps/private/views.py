@@ -17,5 +17,4 @@ def about(request):
 	return render(request, 'private/about.html')
 
 def logout(request):
-	print request.method
 	return render(request, 'public/home.html')

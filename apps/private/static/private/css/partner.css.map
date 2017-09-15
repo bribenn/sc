@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAkB;EACjB,gBAAgB,EAAE,mCAAmC;EACrD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,KAAK",
+"sources": ["partner.scss"],
+"names": [],
+"file": "partner.css"
+}

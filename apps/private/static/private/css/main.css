@@ -13,4 +13,12 @@ nav ul a:hover {
   background-color: white;
   color: #afaeaf; }
 
+.opacity {
+  background-color: rgba(255, 255, 255, 0.47);
+  height: 100%;
+  margin-left: 0px; }
+
+.row-height {
+  height: 100%; }
+
 /*# sourceMappingURL=main.css.map */
