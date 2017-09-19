@@ -8,6 +8,7 @@ $shield-logo-blue: #385072;
 $text-dark-blue: #3f4b5c;
 $shield-logo-gray: #afaeaf;
 $font-light: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif;
+$font-bold: HelveticaNeue-Bold, HelveticaNeue, sans-serif;
 
 h3 {
 	font-size: 36px;
@@ -40,8 +41,8 @@ img.section_1 {
 		font-size: 2.8rem;
 	}
 	p {
-		font-size: 18px;
 		padding: 15px;
+		color: white;
 	}
 }
 
@@ -56,7 +57,6 @@ a.learn_btn_small_blue.right {
 	text-align: center;
 	color: $shield-logo-blue;
 	h3 {
-		font-size: 36px;
 		margin-bottom: 1.5rem;
 	}
 	.s3 h3 {
@@ -77,12 +77,41 @@ a.learn_btn_small_blue.right {
 	height: 75%;
 	width: 75%;
 	}
-	h3 {
-		font-size: 36px;
+	p {
+		margin: 45px 0px;
+		color: white;
+	}
+}
+
+.section_5 {
+	text-align: right;
+	padding: 35px 0px;
+	color: $shield-logo-blue;
+	img {
+		width: 100%;
 	}
 	p {
+	margin: 45px 0px;
+	} 
+	div:nth-of-type(1) {
+		margin-top: 5%;
+	}
+}
+
+.section_6 {
+	text-align: center;
+	color: $shield-logo-blue;
+	padding-bottom: 50px;
+	h1 {
+		font-family: $font-bold;
+	}
+	h5 {
+		font-family: $font-light;
+		text-transform: uppercase;
 		font-size: 18px;
-		margin: 45px 0px;
+	}
+	p {
+		font-size: 14px;
 	}
 }
 

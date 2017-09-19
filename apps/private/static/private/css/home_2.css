@@ -30,8 +30,8 @@ img.section_1 {
   .section_2 h2 {
     font-size: 2.8rem; }
   .section_2 p {
-    font-size: 18px;
-    padding: 15px; }
+    padding: 15px;
+    color: white; }
 
 a.learn_btn_small_blue.right {
   margin-right: 435px;
@@ -43,7 +43,6 @@ a.learn_btn_small_blue.right {
   text-align: center;
   color: #385072; }
   .section_3 h3 {
-    font-size: 36px;
     margin-bottom: 1.5rem; }
   .section_3 .s3 h3 {
     margin-bottom: .25rem; }
@@ -58,11 +57,33 @@ a.learn_btn_small_blue.right {
   .section_4 img {
     height: 75%;
     width: 75%; }
-  .section_4 h3 {
-    font-size: 36px; }
   .section_4 p {
-    font-size: 18px;
+    margin: 45px 0px;
+    color: white; }
+
+.section_5 {
+  text-align: right;
+  padding: 35px 0px;
+  color: #385072; }
+  .section_5 img {
+    width: 100%; }
+  .section_5 p {
     margin: 45px 0px; }
+  .section_5 div:nth-of-type(1) {
+    margin-top: 5%; }
+
+.section_6 {
+  text-align: center;
+  color: #385072;
+  padding-bottom: 50px; }
+  .section_6 h1 {
+    font-family: HelveticaNeue-Bold, HelveticaNeue, sans-serif; }
+  .section_6 h5 {
+    font-family: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px; }
+  .section_6 p {
+    font-size: 14px; }
 
 .learn_btn_small_blue {
   border: 1px solid #385072;

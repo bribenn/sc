@@ -21,7 +21,7 @@
 		<div class="nav-wrapper container">
 		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
 		  <ul class="right hide-on-med-and-down">
-		    <li><a href="/features">Features</a></li>
+		    <li><a class="active" href="/features">Features</a></li>
 		    <li><a href="/expertise">Expertise</a></li>
 		    <li><a href="/partner">Partner</a></li>
 		    <li><a href="/about">About</a></li>
@@ -32,16 +32,17 @@
 	<div class="background-cover">
 		<div class="row row-height">
 			<div class="col s6 offset-s6 opacity">
-				<h1>Our Platform</h1>
+				<h1 class="contain">Our Platform</h1>
 				<p>While other compliance systems only grant a handful of non-proprietary features, Shield’s platform is the only proactive compliance network that eliminates nearly every source of risk in CIB banking.</p>
 			</div>
 		</div>
 	</div>
-	<div class="section_2 container">
-		<h3>From small details to large initiatives</h3>
+	<div class="section_2 section container">
+		<h3 class="center">From small details to large initiatives</h3>
+		<img class="absolute" src="{% static "private/img/arrows.png" %}" alt="arrows"/>
 		<div class="row row-height arrows">
 			<div class="col s3">
-				<h5>Process</h5>
+				<h3>Process</h3>
 				<ul>
 					<li>Single unified system</li>
 					<li>Transaction-tagged data</li>
@@ -49,7 +50,7 @@
 				</ul>	
 			</div>
 			<div class="col s3">
-				<h5>Monitor</h5>
+				<h3>Monitor</h3>
 				<ul>
 					<li>Real-time monitoring</li>
 					<li>Real-time client connection</li>
@@ -57,7 +58,7 @@
 				</ul>	
 			</div>
 			<div class="col s3">
-				<h5>Control</h5>
+				<h3>Control</h3>
 				<ul>
 					<li>Automatic CTR generation</li>
 					<li>SAR glagging</li>
@@ -65,7 +66,7 @@
 				</ul>	
 			</div>
 			<div class="col s3">
-				<h5>Scale</h5>
+				<h3>Scale</h3>
 				<ul>
 					<li>ACH/cashless payment</li>
 					<li>Cloud-based solutions</li>
@@ -75,9 +76,9 @@
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container" id="process">
+	<div class="row container section" id="process">
 		<div class="col s5">
-			<h5>Process</h5>
+			<h3>Process</h3>
 			<h6>One Click Compliance</h6>
 			<p>Shield Compliance’s one-stop platform authenticates all purchases and transaction and tags them all for reference. We verify that the inventory of CIB’s matches with purchases made, cofirming that fraud isn’t a part of the equation.</p>
 			<ul>
@@ -87,17 +88,18 @@
 				<li>Inventory tracking</li>
 			</ul>
 		</div>
+		<div class="divider"></div>
 		<div class="col s7">
-			<h1>image carousel?</h1>
+			<h1>image carousel</h1>
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container" id="monitor">
+	<div class="row container section" id="monitor">
 		<div class="col s7">
 			<h1>image carousel?</h1>
 		</div>
-		<div class="col s5">
-			<h5>Monitor</h5>
+		<div class="col s5 ar">
+			<h3>Monitor</h3>
 			<h6>Proactive Transparency</h6>
 			<p>Our platform constantly monitors all transactions, and if we notice an inconsistency or potential risk, we both act and notify you immediately. You recieve automated alerts of tax liabilities and inventory discrepancies so that you can proceed to work with dispensaries in only the safest manner.</p>
 			<ul>
@@ -108,9 +110,9 @@
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container" id="control">
+	<div class="row container section" id="control">
 		<div class="col s5">
-			<h5>Control</h5>
+			<h3>Control</h3>
 			<h6>Automatic case filing</h6>
 			<p>Working with us means that you will be in complete control of your activities through our exhaustive regulatory framework. If we detect inconsistencies, our platform automatically generates CTR reports to demonstrate your compliance with AML standards. Our SAR flagging system will instantly notify you with a report of non-compliant activities.</p>
 			<ul>
@@ -127,12 +129,12 @@
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container" id="scale">
+	<div class="row container section" id="scale">
 		<div class="col s7">
 			<h1>image carousel?</h1>
 		</div>
-		<div class="col s5">
-			<h5>Scale</h5>
+		<div class="col s5 ar">
+			<h3>Scale</h3>
 			<h6>Cloud based solutions</h6>
 			<p>Because Shield Compliance is a cloud-based platform, we can integrate across multiple accounts simultaneously with ease. Our simple scalability promotes the rapid expansion and growth of high risk cash intensive business banking. We constantly update our platform to stay ahead of upcoming changes to banking regulations. For further accuracy, we’ve partnered with an excellent POS system that helps us to carefully monitor and record all transactions from start to finish.</p>
 			<ul>
@@ -145,9 +147,9 @@
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container">
+	<div class="row container section" id="additional_features">
+		<h3>Additional Features</h3>
 		<div class="col s6">
-			<h5>Additional Features</h5>
 			<img src="{% static "private/img/shieldpaylogo@3x.png" %}" alt="shield pay">
 			<p>Shield Pay connects consumers to CIB locations via a secure ACH connection. ACH enables easy, repeated, cashless payments, adding convienance for both consumers and CIB locations. The Shield Pay application grants users a unique identifying pin number that allows them to pay at participating CIB locations</p>
 		</div>
@@ -156,20 +158,20 @@
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container">
+	<div class="row container section">
 		<div class="col s6">
 			<h1>image carousel?</h1>
 		</div>
 		<div class="col s6">
-			<h5>One-Click Audit Preparation</h5>
+			<h3>One-Click Audit Preparation</h3>
 			<p>Audit preparation can be difficult and time-consuming, but Shield Compliance’s system enables banks to automatically generate all necessary auditing summary materials with a single click. These files become ready to print and share immediately, removing the hassle of audit preparation.</p>
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container">
+	<div class="row container section" id="coming_soon">
 		<div class="col s4">
 			<h6>Coming Soon</h6>
-			<h5>Internetwork Anonymous Forum</h5>
+			<h3>Internetwork Anonymous Forum</h3>
 		</div>
 		<div class="col s4">
 			<h1>image carousel?</h1>
@@ -178,31 +180,37 @@
 			<p>Shield will soon have a forum where you can ask anonymous questions that are quickly answered by our professionals as well as a former AML compliance officer. Previous questions will be publicly available for your reference. </p>
 		</div>
 	</div>
-	<div class="fill footer_line">
-		<ul class="center">
-			<a href="/features">features</a>
-			<a href="/expertise">expertise</a>
-			<a href="/partner">partner</a>
-			<a href="/about">about</a>
+	</div>
+		<ul class="center footer-bar fill" id="private-bar">
+			<li><a href="/features">features</a></li>
+			<li><a href="/expertise">expertise</a></li>
+			<li><a href="/partner">partner</a></li>
+			<li><a href="/about">about</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
 		<div class="row">
 			<div class="col s4">
 				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
-				<p>Email: info@shieldbanking.com</p>
-				<p>Phone: 123 456 7890</p>
+				<div>
+					<p>Email: info@shieldbanking.com</p>
+					<p>Phone: 123 456 7890</p>
+				</div>
 			</div>
 			<div class="col s4">
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
-				<p>© 2017 Shield Compliance. All Rights Reserved</p>
-				<p>Designed by Hallee May, LLC</p>
 			</div>
-			<div class="col s4">
-				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
-				<a href="#!">Privacy Policy</a>
-				<a href="#!">Terms of Use</a>
+			<div class="col s4 right">
+				<img class="right" src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<ul class="right">
+					<li><a href="#!">Privacy Policy</a></li>
+					<li><a href="#!">Terms of Use</a></li>
+				</ul>
 			</div>
+		</div>
+		<div class="footer-middle">
+			<p>© 2017 Shield Compliance. All Rights Reserved</p>
+			<p>Designed by <a href="https://www.halleemay.com/"> Hallee May, LLC</a></p>
 		</div>
 	</div>
 

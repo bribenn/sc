@@ -3,5 +3,64 @@
   width: 100%;
   height: 300px;
   background-size: cover; }
+  .background-cover h1, .background-cover p {
+    text-align: right;
+    padding-right: 30px; }
+  .background-cover .container p {
+    width: 100%; }
+
+.cole .s8 p {
+  width: 90%;
+  color: black; }
+.cole .s4 img {
+  height: 182px; }
+.cole .s6 li {
+  margin-left: 50%;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold; }
+.cole ul img {
+  width: 28px;
+  line-height: 18px;
+  margin-right: 20px; }
+.cole .list {
+  padding: 10px 0px 50px 0px; }
+
+#pillars {
+  width: 250px; }
+
+.pillars {
+  margin-bottom: 50px; }
+  .pillars ul li {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 80px; }
+
+.blockchain {
+  margin-bottom: 50px; }
+  .blockchain p {
+    color: black; }
+
+.regulatory {
+  color: white;
+  padding: 50px 0px; }
+  .regulatory p {
+    color: white;
+    font-size: 14px; }
+  .regulatory h4 {
+    font-size: 28px; }
+  .regulatory img {
+    margin-top: 20px; }
+
+.compliance {
+  padding: 50px 0px; }
+  .compliance h4 {
+    font-size: 28px; }
+  .compliance .s4 h6 {
+    font-size: 24px; }
+  .compliance .middle {
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0; }
 
 /*# sourceMappingURL=expertise.css.map */

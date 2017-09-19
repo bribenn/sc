@@ -23,7 +23,7 @@
 		  <ul class="right hide-on-med-and-down">
 		    <li><a href="/features">Features</a></li>
 		    <li><a href="/expertise">Expertise</a></li>
-		    <li><a href="/partner">Partner</a></li>
+		    <li><a class="active" href="/partner">Partner</a></li>
 		    <li><a href="/about">About</a></li>
 		    <li><a href="/logout">Logout</a></li>
 		  </ul>
@@ -39,11 +39,11 @@
 	</div>
 	<div class="container">
 		<div>
-			<h1>Shield is the point where banks, merchants and customers meet. We strive to make this place safe, secure and profitable</h1>
+			<h1 class="center">Shield is the point where banks, merchants and customers meet. We strive to make this place safe, secure and profitable</h1>
 		</div>
 		<div>
-			<h3>Why partner?</h3>
-			<div class="row">
+			<h3 class="center">Why partner?</h3>
+			<div class="row center" id="partner">
 				<div class="col s4">
 					<img src="{% static "private/img/touchicon@2x.png" %}" alt="touch icon">
 					<h5>More than a sidecar</h5>
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row partner">
 			<div class="col s6">
 				<img src="{% static "private/img/fiserv-logo@2x.png" %}" alt="fiserv logo">
 				<img src="{% static "private/img/fis-logo@2x.png" %}" alt="fis logo">
@@ -82,31 +82,38 @@
 
 
 
-	<div class="fill footer_line">
-		<ul class="center">
-			<a href="/features">features</a>
-			<a href="/expertise">expertise</a>
-			<a href="/partner">partner</a>
-			<a href="/about">about</a>
+	<div>
+		<ul class="center footer-bar fill" id="private-bar">
+			<li><a href="/features">features</a></li>
+			<li><a href="/expertise">expertise</a></li>
+			<li><a href="/partner">partner</a></li>
+			<li><a href="/about">about</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
 		<div class="row">
 			<div class="col s4">
 				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
-				<p>Email: info@shieldbanking.com</p>
-				<p>Phone: 123 456 7890</p>
+				<div>
+					<p>Email: info@shieldbanking.com</p>
+					<p>Phone: 123 456 7890</p>
+				</div>
 			</div>
 			<div class="col s4">
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
-				<p>© 2017 Shield Compliance. All Rights Reserved</p>
-				<p>Designed by Hallee May, LLC</p>
 			</div>
-			<div class="col s4">
-				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
-				<a href="#!">Privacy Policy</a>
-				<a href="#!">Terms of Use</a>
+			<div class="col s4 right">
+				<img class="right" src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<ul class="right">
+					<li><a href="#!">Privacy Policy</a></li>
+					<li><a href="#!">Terms of Use</a></li>
+				</ul>
 			</div>
 		</div>
+		<div class="footer-middle">
+			<p>© 2017 Shield Compliance. All Rights Reserved</p>
+			<p>Designed by <a href="https://www.halleemay.com/"> Hallee May, LLC</a></p>
+		</div>
+	</div>
 </body>
 </html>

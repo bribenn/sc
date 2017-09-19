@@ -3,5 +3,36 @@
   width: 100%;
   height: 300px;
   background-size: cover; }
+  .background-cover h1, .background-cover p {
+    text-align: right;
+    padding-right: 30px; }
+  .background-cover .container p {
+    width: 100%;
+    color: black; }
+  .background-cover .s6 h1 {
+    margin: 5rem 0 20px 0; }
+
+.lightbulb {
+  margin: 100px 0; }
+  .lightbulb img {
+    width: 150px; }
+  .lightbulb p {
+    color: black; }
+
+.start {
+  color: white;
+  padding: 30px; }
+  .start h3, .start p, .start h1 {
+    text-align: right;
+    color: white; }
+  .start p {
+    font-size: 15px;
+    padding-left: 30px; }
+  .start h4 {
+    font-family: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif;
+    font-size: 19px;
+    text-transform: uppercase; }
+  .start sup {
+    font-family: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif; }
 
 /*# sourceMappingURL=about.css.map */

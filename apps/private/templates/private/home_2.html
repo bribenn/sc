@@ -35,7 +35,7 @@
 	</div>
 	<div>
 		<img class="section_1" src="{% static "private/img/background-base@3x.png" %}" alt="geometric lines"/>
-		<a href="/about" class="learn_btn_small_blue right">LEARN MORE</a>
+		<a class="learn_btn_small_blue right" href="/about">learn more</a>
 	</div>
 	<div class="fill section_2">
 		<div class="container">
@@ -92,9 +92,12 @@
 				<p>We know the cash-intensive business industry is difficult to navigate, and that’s why we are here for you. We offer training for our platform, and our knowledge of compliance law is second to none.</p>
 				<a class="learn_btn_small_blue" href="/partner">Learn More</a>
 			</div>
+			<div class="col s6">
+				<img src="{% static "private/img/partnerphoto@3x.jpg" %}" alt="partner photo">
+			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container section_6">
 		<h3>Leading our industry</h3>
 		<div class="row">
 			<div class="col s3">
@@ -115,43 +118,47 @@
 			<div class="col s3">
 				<h1>3</h1>
 				<h5>years of development</h5>
-				<p>Our developers have comitted thousands of hours to building our proprieatary platform, ensuring every regulation is accounted for.</p>
+				<p>Our developers have comitted thousands of hours to building our proprieatary platform, ensuring every regulation is accounted for</p>
 			</div>
 		</div>
 		<div>
 			<ul class="center">
-			<a href="/about">Learn More</a>
+			<a href="/about" class="learn_btn_small_blue">Learn More</a>
 			</ul>
 		</div>
 	</div>
-	<div class="fill footer_line">
-		<ul class="center">
-			<a href="/features">features</a>
-			<a href="/expertise">expertise</a>
-			<a href="/partner">partner</a>
-			<a href="/about">about</a>
+		<ul class="center footer-bar fill" id="private-bar">
+			<li><a href="/features">features</a></li>
+			<li><a href="/expertise">expertise</a></li>
+			<li><a href="/partner">partner</a></li>
+			<li><a href="/about">about</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
 		<div class="row">
 			<div class="col s4">
 				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
-				<p>Email: info@shieldbanking.com</p>
-				<p>Phone: 123 456 7890</p>
+				<div>
+					<p>Email: info@shieldbanking.com</p>
+					<p>Phone: 123 456 7890</p>
+				</div>
 			</div>
 			<div class="col s4">
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
-				<p>© 2017 Shield Compliance. All Rights Reserved</p>
-				<p>Designed by Hallee May, LLC</p>
 			</div>
-			<div class="col s4">
-				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
-				<a href="#!">Privacy Policy</a>
-				<a href="#!">Terms of Use</a>
+			<div class="col s4 right">
+				<img class="right" src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<ul class="right">
+					<li><a href="#!">Privacy Policy</a></li>
+					<li><a href="#!">Terms of Use</a></li>
+				</ul>
 			</div>
 		</div>
+		<div class="footer-middle">
+			<p>© 2017 Shield Compliance. All Rights Reserved</p>
+			<p>Designed by <a href="https://www.halleemay.com/"> Hallee May, LLC</a></p>
+		</div>
 	</div>
-
 
 </body>
 </html>

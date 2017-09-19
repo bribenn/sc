@@ -72,10 +72,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="fill footer-bar" id="demo-bar">
-		<!-- Modal Trigger -->
-		<ul class="center">
-			<li><a class="modal-trigger" href="#login">LOGIN</a></li>
+	<!-- Modal Trigger -->
+		<ul class="center footer-bar fill" id="demo-bar">
+			<li><a class="modal-trigger center" href="#login">LOGIN</a></li>
 			<li><a href="#!">CONTACT</a></li>
 		</ul>
 	</div>
@@ -83,19 +82,25 @@
 		<div class="row">
 			<div class="col s4">
 				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
-				<p>Email: info@shieldbanking.com</p>
-				<p>Phone: 123 456 7890</p>
+				<div>
+					<p>Email: info@shieldbanking.com</p>
+					<p>Phone: 123 456 7890</p>
+				</div>
 			</div>
 			<div class="col s4">
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
-				<p>© 2017 Shield Compliance. All Rights Reserved</p>
-				<p>Designed by Hallee May, LLC</p>
 			</div>
-			<div class="col s4">
-				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
-				<a href="#!">Privacy Policy</a>
-				<a href="#!">Terms of Use</a>
+			<div class="col s4 right">
+				<img class="right" src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<ul class="right">
+					<li><a href="#!">Privacy Policy</a></li>
+					<li><a href="#!">Terms of Use</a></li>
+				</ul>
 			</div>
+		</div>
+		<div class="footer-middle">
+			<p>© 2017 Shield Compliance. All Rights Reserved</p>
+			<p>Designed by <a href="https://www.halleemay.com/"> Hallee May, LLC</a></p>
 		</div>
 	</div>
 </body>
@@ -103,18 +108,18 @@
 
 
 
-				<!-- Modal Structure -->
-				<div id="login" class="modal">
-					<div class="modal-content">
-						<!-- login form -->
-						<form action="/login" method="post">
-							{% csrf_token %}
-							<label>Please Enter The Password</label>
-							<input type="password" name="password">
-							<div class="modal-footer">
-								<input type="hidden" name="next" value="public/demo_request.html" />
-								<button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Login</button>
-							</div>
-						</form>
-					</div>
-				</div>
+<!-- Modal Structure -->
+<div id="login" class="modal">
+	<div class="modal-content">
+		<!-- login form -->
+		<form action="/login" method="post">
+			{% csrf_token %}
+			<label>Please Enter The Password</label>
+			<input type="password" name="password">
+			<div class="modal-footer">
+				<input type="hidden" name="next" value="public/demo_request.html" />
+				<button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Login</button>
+			</div>
+		</form>
+	</div>
+</div>
