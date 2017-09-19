@@ -14,49 +14,43 @@
 	<script src="{% static 'public/javascript/home.js' %}"></script>
 	<!-- specific css file -->
 	<link rel="stylesheet" href="{% static 'public/css/demo_request.css' %}"media="screen" title="no title"  charset="utf-8">
+	<link rel="stylesheet" href="{% static 'public/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
 	<div class="keyboard-background">
 		<div class="fill">
-			<div class="header container">
-
-				<img src="{% static "public/img/shieldnavlogo.png" %}" alt="logo"/>
-				<!-- Modal Trigger -->
-				<a class="modal-trigger" href="#login">Login</a>
-
-				<!-- Modal Structure -->
-				<div id="login" class="modal">
-					<div class="modal-content">
-						<form>
-							<label>Please Enter The Password</label>
-							<input type="password" name="password">
-						</form>
-					</div>
-					<div class="modal-footer">
-						<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
-					</div>
+			<nav class="transparent z-depth-0 demo">
+				<div class="container nav-wrapper">
+					<img class="brand-logo" src="{% static "public/img/shieldnavlogo.png" %}" alt="logo"/>
+					<ul class="right hide-on-med-and-down">
+						<!-- Modal Trigger -->
+						<li><a class="modal-trigger" href="#login">Login</a></li>
+						<li><a class="demo_btn" href="/demo_request">REQUEST A DEMO</a></li>
+					</ul>
 				</div>
-
-				<a href="/demo_request">REQUEST A DEMO</a>
-			</div>
+			</nav>
 		</div>
 	</div>
+	<!-- Demo Request Form -->
 	<div class="container">
 		<div class="row">
 			<div class="col s7 form">
-				<h1>Request a Demo</h1>
-				<form>
-					<label>Name</label>
-					<input type="text" name="name">
-					<label>Company</label>
-					<input type="text" name="name">
-					<label>Email</label>
-					<input type="text" name="name">
-					<label>Phone</label>
-					<input type="text" name="name">
-					<label>Interest in Platform</label>
-					<textarea></textarea>
-					<input type="submit" name="Submit">
+				<h1>Request a demo</h1>
+				<form role="form" action="/demoEmail" method="post">
+					{% csrf_token %}
+					<div class="form-actions">
+						<label>Name</label>
+						<input type="textarea" name="name">
+						<label>Company</label>
+						<input type="textarea" name="company">
+						<label>Email</label>
+						<input type="textarea" name="from_email">
+						<label>Phone</label>
+						<input type="textarea" name="phone">
+						<label>Interest in Platform</label>
+						<textarea></textarea>
+						<input id="submit" type="submit" name="Submit">
+					</div>
 				</form>
 			</div>
 			<div class="col s5">
@@ -78,11 +72,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="fill footer_line">
+	<div class="fill footer-bar" id="demo-bar">
 		<!-- Modal Trigger -->
 		<ul class="center">
-			<a class="modal-trigger" href="#login">LOGIN</a>
-			<a href="#!">CONTACT</a>
+			<li><a class="modal-trigger" href="#login">LOGIN</a></li>
+			<li><a href="#!">CONTACT</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
@@ -106,3 +100,21 @@
 	</div>
 </body>
 </html>
+
+
+
+				<!-- Modal Structure -->
+				<div id="login" class="modal">
+					<div class="modal-content">
+						<!-- login form -->
+						<form action="/login" method="post">
+							{% csrf_token %}
+							<label>Please Enter The Password</label>
+							<input type="password" name="password">
+							<div class="modal-footer">
+								<input type="hidden" name="next" value="public/demo_request.html" />
+								<button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Login</button>
+							</div>
+						</form>
+					</div>
+				</div>

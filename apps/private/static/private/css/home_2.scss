@@ -7,12 +7,102 @@
 $shield-logo-blue: #385072;
 $text-dark-blue: #3f4b5c;
 $shield-logo-gray: #afaeaf;
+$font-light: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif;
+
+h3 {
+	font-size: 36px;
+}
+
+.section_1 h1 {
+	font-family: $font-light;
+	color: $shield-logo-blue;
+	font-size: 62px;
+	margin: 0px;
+	margin-top: -5px;
+} h1:nth-child(2) {
+	margin-left: 150px;
+}
 
 img.section_1 {
 	width: 100%;
-	margin-top: -315px;
+	margin-top: -278px;
 }
 
-.section_4 img {
-	width: 75%;
+.section_2 {
+	text-align: center;
+	margin-top: -6px;
+	color: white;
+	padding: 65px 0px;
+	img {
+	width:	100px;
+	}
+	h2 {
+		font-size: 2.8rem;
+	}
+	p {
+		font-size: 18px;
+		padding: 15px;
+	}
 }
+
+a.learn_btn_small_blue.right {
+	margin-right: 435px;
+	margin-top: -125px;
+	text-transform: uppercase;
+}
+
+.section_3 {
+	padding: 40px 0px;
+	text-align: center;
+	color: $shield-logo-blue;
+	h3 {
+		font-size: 36px;
+		margin-bottom: 1.5rem;
+	}
+	.s3 h3 {
+		margin-bottom: .25rem;
+	}
+	img {
+		height: 84px;
+	}
+	a {
+		color: $shield-logo-blue;
+	}
+}
+
+.section_4 {
+	color: white;
+	padding: 50px 0px;
+	img {
+	height: 75%;
+	width: 75%;
+	}
+	h3 {
+		font-size: 36px;
+	}
+	p {
+		font-size: 18px;
+		margin: 45px 0px;
+	}
+}
+
+.learn_btn_small_blue {
+	border: 1px solid $shield-logo-blue;
+	color: $shield-logo-blue;
+	font-size: 13px;
+	padding: 3px 15px;
+	text-transform: uppercase;
+}
+
+.learn_btn_small_white {
+	border: 1px solid white;
+	color: white;
+	font-size: 13px;
+	padding: 3px 15px;
+	text-transform: uppercase;
+}
+
+
+
+
+

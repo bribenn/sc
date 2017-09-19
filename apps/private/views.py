@@ -17,4 +17,7 @@ def about(request):
 	return render(request, 'private/about.html')
 
 def logout(request):
+	print "logged out"
+	request.session['logged_in'] == "false"
+	print "session", request.session
 	return render(request, 'public/home.html')

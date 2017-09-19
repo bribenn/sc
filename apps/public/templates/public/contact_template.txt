@@ -1,0 +1,14 @@
+name: 
+{{name}}
+
+company:
+{{company}}
+
+email: 
+{{from_email}}
+
+phone:
+{{phone}}
+
+interest:
+{{interest}}

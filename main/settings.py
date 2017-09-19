@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'kln=2y20s+8-@q$+eof1aq=c0cgpt4-gomw1^#r^frhp)svu+#'
-
+SESSION_ENGINE = "django.contrib.sessions.backends.signed_cookies"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -120,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False 
+EMAIL_PORT = 1025

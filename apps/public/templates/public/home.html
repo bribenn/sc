@@ -12,8 +12,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 	<!-- My Javascript file -->
 	<script src="{% static 'public/javascript/home.js' %}"></script>
-	<!-- my css file -->
+	<!-- my css files -->
 	<link rel="stylesheet" href="{% static 'public/css/home.css' %}"media="screen" title="no title"  charset="utf-8">
+	<link rel="stylesheet" href="{% static 'public/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
 	<div class="fill">
@@ -23,7 +24,7 @@
 				<ul class="right hide-on-med-and-down">
 					<!-- Modal Trigger -->
 					<li><a class="modal-trigger" href="#login">Login</a></li>
-					<li><a href="/demo_request">REQUEST A DEMO</a></li>
+					<li><a class="demo_btn" href="/demo_request">REQUEST A DEMO</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -31,13 +32,20 @@
 		<!-- Modal Structure -->
 		<div id="login" class="modal">
 			<div class="modal-content">
-				<form>
+				<!-- login form -->
+				<form action="/login" method="post">
+					{% csrf_token %}
 					<label>Please Enter The Password</label>
 					<input type="password" name="password">
-				</form>
+					{% if messages %}
+						{% for message in messages %}
+							<p>{{message}}</p>
+						{%endfor%}
+					{% endif %}
 			</div>
 			<div class="modal-footer">
-				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+				<input type="submit" value="LOGIN" class="modal-action waves-effect waves-green btn-flat">
+				</form>
 			</div>
 		</div>
 
@@ -47,13 +55,13 @@
 		</div>
 		<div>
 			<img class="section_1" src="{% static "public/img/homeback-2@3x.png" %}" alt="geometric lines"/>
-			<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+			<a class="demo_btn_small_white right" href="/demo_request">REQUEST A DEMO</a>
 		</div>
 	</div>
 	<div class="section_2 container">
 		<h2>We are the first one-stop compliance system</h2>
-		<p>Shield Compliance is one-of-a-kind. Our platform asses every risk, regulating the transactions of both your customers and theirs. Not only will we notify you of non-compliant activity, but we will immediately act as well to ensure that you are not accountable for potential fraud.</p>
-		<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+		<p class="container">Shield Compliance is one-of-a-kind. Our platform asses every risk, regulating the transactions of both your customers and theirs. Not only will we notify you of non-compliant activity, but we will immediately act as well to ensure that you are not accountable for potential fraud.</p>
+		<a class="demo_btn_small_blue" href="/demo_request">REQUEST A DEMO</a>
 	</div>
 	<div class="section_3 fill">
 		<div class="container">
@@ -61,24 +69,24 @@
 			<div class="row">
 				<div class="col s3">
 					<img src="{% static "public/img/processlogo-2@3x.png" %}" alt="process logo">
-					<h4>Process</h4>
+					<h3>Process</h3>
 				</div>
 				<div class="col s3">
 					<img src="{% static "public/img/monitorlogo-2@3x.png" %}" alt="monitor logo">
-					<h4>Monitor</h4>
+					<h3>Monitor</h3>
 				</div>
 				<div class="col s3">
 					<img src="{% static "public/img/controllogo-2@3x.png" %}" alt="control logo">
-					<h4>Control</h4>
+					<h3>Control</h3>
 				</div>
 				<div class="col s3">
 					<img src="{% static "public/img/scalelogo-2@3x.png" %}" alt="scale logo">
-					<h4>Scale</h4>
-				</div>
-				<div>
-					<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+					<h3>Scale</h3>
 				</div>
 			</div>
+				
+				<a class="demo_btn_small_white center" href="/demo_request">REQUEST A DEMO</a>
+				
 		</div>
 	</div>
 	<div class="section_4 container">
@@ -86,7 +94,7 @@
 			<div class="col s6">
 				<h4>Your Opportunity</h4>
 				<p>Cash-intensive businesses are a risk due to their complexity - but they don’t have to be. Your bank can leverage CIB cash-flow through upholding the highest level of compliance with Shield’s innovative platform. </p>
-				<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+				<a class="demo_btn_small_blue" href="/demo_request">REQUEST A DEMO</a>
 			</div>
 			<div class="col s6">
 				<img src="{% static "public/img/opportunitypic@3x.jpg" %}" alt="opportunity pic"">
@@ -96,33 +104,39 @@
 	<div class="section_5 fill">
 		<div class="container">
 			<h2>We'd like to help you grow your business</h2>
-			<a class="demo_btn_small" href="/demo_request">REQUEST A DEMO</a>
+			<a class="demo_btn_small_white" href="/demo_request">REQUEST A DEMO</a>
 		</div>
 	</div>
 	<div>
 		<!-- Modal Trigger -->
-		<ul class="center">
-			<a class="modal-trigger" href="#login">LOGIN</a>
-			<a href="#!">CONTACT</a>
+		<ul class="center footer-bar" id="home-bar">
+			<li><a class="modal-trigger center" href="#login">LOGIN</a></li>
+			<li><a href="#!">CONTACT</a></li>
 		</ul>
-	</di
+	</div>
 	<div class="footer container">
 		<div class="row">
 			<div class="col s4">
 				<img src="{% static "public/img/shield-logo@3x.png" %}" alt="shield logo"">
-				<p>Email: info@shieldbanking.com</p>
-				<p>Phone: 123 456 7890</p>
+				<div>
+					<p>Email: info@shieldbanking.com</p>
+					<p>Phone: 123 456 7890</p>
+				</div>
 			</div>
 			<div class="col s4">
 				<p>Shield Compliance creates safe, compliant retail environments so banks and high-risk merchants can thrive securely.</p>
-				<p>© 2017 Shield Compliance. All Rights Reserved</p>
-				<p>Designed by Hallee May, LLC</p>
 			</div>
-			<div class="col s4">
-				<img src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
-				<a href="#!">Privacy Policy</a>
-				<a href="#!">Terms of Use</a>
+			<div class="col s4 right">
+				<img class="right" src="{% static "public/img/fblogo-path-linkedinlogo@2x.png" %}" alt="facebook logo, linkedin logo"">
+				<ul class="right">
+					<li><a href="#!">Privacy Policy</a></li>
+					<li><a href="#!">Terms of Use</a></li>
+				</ul>
 			</div>
+		</div>
+		<div class="footer-middle">
+			<p>© 2017 Shield Compliance. All Rights Reserved</p>
+			<p>Designed by <a href="#!"> Hallee May, LLC</a></p>
 		</div>
 	</div>
 

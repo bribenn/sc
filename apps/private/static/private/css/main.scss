@@ -3,10 +3,14 @@
 	margin: 0px;
 	padding: 0px;
 }
-
+$font-stack: HelveticaNeue, sans-serif;
 $shield-logo-blue: #385072;
 $text-dark-blue: #3f4b5c;
 $shield-logo-gray: #afaeaf;
+
+body {
+	font-family: $font-stack;
+}
 
 .fill {
 	background-color: $shield-logo-blue;
@@ -14,11 +18,17 @@ $shield-logo-gray: #afaeaf;
 
 nav ul a {
 	color: $text-dark-blue;
+	margin-top: 10px;
+	line-height: 30px;
 }
 
 nav ul a:hover {
    background-color: white;
    color: $shield-logo-gray;
+}
+
+nav {
+	padding: 43px 0px 100px 0px;
 }
 
 .opacity {
