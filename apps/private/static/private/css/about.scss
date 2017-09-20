@@ -1,5 +1,5 @@
 $font-light: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif;
-
+$shield-logo-blue: #385072;
 
 .background-cover {
 	background-image: url("../img/about-header@3x.png");
@@ -20,21 +20,28 @@ $font-light: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, Helv
 }
 
 .lightbulb {
-	margin: 100px 0;
+	margin: 125px 0;
 	img {
 		width: 150px;
+		margin-top: 10%;
 	}
 	p {
 		color: black;
+		width: 69%;
 	}
 }
 
 .start {
 	color: white;
-	padding: 30px;
+	padding: 100px;
 	h3, p, h1 {
 		text-align: right;
 		color: white;
+	}
+	h1 {
+		font-size: 83px;
+		font-weight: bold;
+		margin: 5px;
 	}
 	p {
 		font-size: 15px;
@@ -48,5 +55,49 @@ $font-light: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, Helv
 	sup {
 		font-family: $font-light;
 	}
+	.start_story {
+		padding-right: 60px;
+	}
 }
+
+.numbers {
+	margin-top: 40px;
+	h4 {
+		padding: 22px 0;
+	}
+}
+
+.col.s3 {
+	h4 {
+		font-size: 25px;
+		margin-bottom: 5px;
+	}
+	h5 {
+		color: $shield-logo-blue;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-top: 0px;
+	}
+	p {
+		color: black;
+		font-size: 14px;
+	}
+}
+
+.img {
+	background-color: gray;
+	width: 150px;
+	height: 257px;
+}
+
+.team {
+	padding: 30px 0;
+	.row {
+		padding: 50px 0 0 0;
+	}
+}
+
+
+
+
 

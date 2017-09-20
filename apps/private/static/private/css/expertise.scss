@@ -76,13 +76,29 @@
 	padding: 50px 0px;
 	h4 {
 		font-size: 28px;
+		margin-bottom: 30px;
 	}
 	.s4 h6 {
 		font-size: 24px;
+		text-align: center;
+	}
+	.bottom {
+		padding-top: 30px;
 	}
 	.middle {
 		border-left: 1px solid #e0e0e0;
 		border-right: 1px solid #e0e0e0;
+	}
+	p {
+		font-size: 12px;
+		color: black;
+		text-align: center;
+		padding: 0px 30px 30px 30px;
+	}
+	span {
+		display: block;
+		padding-top: 5px;
+		font-style: italic;
 	}
 }
 

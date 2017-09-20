@@ -56,11 +56,24 @@
 .compliance {
   padding: 50px 0px; }
   .compliance h4 {
-    font-size: 28px; }
+    font-size: 28px;
+    margin-bottom: 30px; }
   .compliance .s4 h6 {
-    font-size: 24px; }
+    font-size: 24px;
+    text-align: center; }
+  .compliance .bottom {
+    padding-top: 30px; }
   .compliance .middle {
     border-left: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0; }
+  .compliance p {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    padding: 0px 30px 30px 30px; }
+  .compliance span {
+    display: block;
+    padding-top: 5px;
+    font-style: italic; }
 
 /*# sourceMappingURL=expertise.css.map */

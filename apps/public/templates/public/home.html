@@ -29,25 +29,6 @@
 			</div>
 		</nav>
 
-		<!-- Modal Structure -->
-		<div id="login" class="modal">
-			<div class="modal-content">
-				<!-- login form -->
-				<form action="/login" method="post">
-					{% csrf_token %}
-					<label>Please Enter The Password</label>
-					<input type="password" name="password">
-					{% if messages %}
-						{% for message in messages %}
-							<p>{{message}}</p>
-						{%endfor%}
-					{% endif %}
-			</div>
-			<div class="modal-footer">
-				<input type="submit" value="LOGIN" class="modal-action waves-effect waves-green btn-flat">
-				</form>
-			</div>
-		</div>
 
 		<div class="container section_1">
 			<h1>Tracking every dollar</h1>
@@ -140,5 +121,24 @@
 		</div>
 	</div>
 
+		<!-- Modal Structure -->
+		<div id="login" class="modal">
+			<div class="modal-content">
+				<!-- login form -->
+				<form action="/login" method="post">
+					{% csrf_token %}
+					<label class="browser-default">Please Enter The Password</label>
+					<input class="browser-default" type="password" name="password">
+					{% if messages %}
+						{% for message in messages %}
+							<p>{{message}}</p>
+						{%endfor%}
+					{% endif %}
+			</div>
+			<div class="modal-footer">
+				<input type="submit" value="LOGIN" class="modal-action btn-flat">
+				</form>
+			</div>
+		</div>
 </body>
 </html>

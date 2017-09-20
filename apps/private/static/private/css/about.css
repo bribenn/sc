@@ -13,18 +13,24 @@
     margin: 5rem 0 20px 0; }
 
 .lightbulb {
-  margin: 100px 0; }
+  margin: 125px 0; }
   .lightbulb img {
-    width: 150px; }
+    width: 150px;
+    margin-top: 10%; }
   .lightbulb p {
-    color: black; }
+    color: black;
+    width: 69%; }
 
 .start {
   color: white;
-  padding: 30px; }
+  padding: 100px; }
   .start h3, .start p, .start h1 {
     text-align: right;
     color: white; }
+  .start h1 {
+    font-size: 83px;
+    font-weight: bold;
+    margin: 5px; }
   .start p {
     font-size: 15px;
     padding-left: 30px; }
@@ -34,5 +40,34 @@
     text-transform: uppercase; }
   .start sup {
     font-family: HelveticaNeue-Thin, HelveticaNeue-Light, Helvetica Neue Light, HelveticaNeue, sans-serif; }
+  .start .start_story {
+    padding-right: 60px; }
+
+.numbers {
+  margin-top: 40px; }
+  .numbers h4 {
+    padding: 22px 0; }
+
+.col.s3 h4 {
+  font-size: 25px;
+  margin-bottom: 5px; }
+.col.s3 h5 {
+  color: #385072;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0px; }
+.col.s3 p {
+  color: black;
+  font-size: 14px; }
+
+.img {
+  background-color: gray;
+  width: 150px;
+  height: 257px; }
+
+.team {
+  padding: 30px 0; }
+  .team .row {
+    padding: 50px 0 0 0; }
 
 /*# sourceMappingURL=about.css.map */

@@ -26,11 +26,6 @@ a.demo_btn_small_white.right {
 	margin-top: -120px;
 }
 
-.section_4 img {
-	width: 100%;
-
-}
-
 .demo_btn_small_blue {
 	border: 1px solid $shield-logo-blue;
 	color: $shield-logo-blue;
@@ -82,7 +77,8 @@ a.demo_btn_small_white.right {
 		color: $shield-logo-blue;
 	}
 	img {
-		margin: 20px 0px;
+		width: 100%;
+		padding: 30px;
 	}
 	p {
 		font-size: 18px;
