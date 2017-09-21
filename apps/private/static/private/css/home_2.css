@@ -99,4 +99,20 @@ a.learn_btn_small_blue.right {
   padding: 3px 15px;
   text-transform: uppercase; }
 
+.learn_btn_small_white:hover {
+  background-color: white;
+  color: #3f4b5c; }
+
+.learn_btn_small_blue:hover {
+  background-color: #3f4b5c;
+  color: white; }
+
+#top_btn {
+  position: relative;
+  z-index: 1; }
+
+#top_btn:hover {
+  background-color: #3f4b5c;
+  color: white; }
+
 /*# sourceMappingURL=home_2.css.map */

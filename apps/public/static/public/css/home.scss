@@ -22,8 +22,8 @@ img.section_1 {
 }
 
 a.demo_btn_small_white.right {
-	margin-right: 260px;
-	margin-top: -120px;
+	margin-right: 435px;
+	margin-top: -125px;
 }
 
 .demo_btn_small_blue {
@@ -32,12 +32,22 @@ a.demo_btn_small_white.right {
 	font-size: 13px;
 	padding: 3px 6px;
 }
+.demo_btn_small_blue:hover {
+	background-color: $shield-logo-blue;
+	color: white;
+}
+
 
 .demo_btn_small_white {
 	border: 1px solid white;
 	color: white;
 	font-size: 13px;
 	padding: 3px 6px;
+}
+
+.demo_btn_small_white:hover {
+	background-color: white;
+	color: $shield-logo-blue;
 }
 
 .section_2 {
@@ -103,7 +113,15 @@ a.demo_btn_small_white.right {
 		color: $shield-logo-blue;
 	}
 
+#top_btn {
+	position: relative;
+	z-index: 1;
+}
 
+#top_btn:hover {
+	background-color: white;
+	color: $shield-logo-blue;
+}
 
 
 

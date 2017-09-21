@@ -7,6 +7,7 @@ from django.core.mail import send_mail, BadHeaderError
 
 # Create your views here.
 def index(request):
+	request.session['logged_in'] = False
 	return render(request, 'public/home.html')
 
 def demo_request(request):
@@ -15,18 +16,12 @@ def demo_request(request):
 def login(request):
 	if request.method == 'POST':
 		password = "ShieldBank2017"
-		here = request.POST.get('next')
+		here = request.POST.get('here')
 
 		if request.POST.get('password') == password:
-			request.session['logged_in'] = 'true'
+			request.session['logged_in'] = True
 			return render(request, 'private/home_2.html')
 
 		messages.add_message(request, messages.INFO, "sorry, wrong password", extra_tags="login")
-	return redirect(request, here)
+	return redirect(here)
 
-def demoEmail(request):
-	name = request.POST.get('name', '')
-	company = request.POST.get('company', '')
-	email = request.POST.get('email', '')
-	phone = request.POST.get('phone', '')
-	interest = request.POST.get('interest', '')

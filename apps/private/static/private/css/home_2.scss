@@ -131,7 +131,24 @@ a.learn_btn_small_blue.right {
 	text-transform: uppercase;
 }
 
+.learn_btn_small_white:hover {
+	background-color: white;
+	color: $text-dark-blue;
+}
 
+.learn_btn_small_blue:hover {
+	background-color: $text-dark-blue;
+	color: white;
+}
 
+#top_btn {
+	position: relative;
+	z-index: 1;
+}
+
+#top_btn:hover {
+	background-color: $text-dark-blue;
+	color: white;
+}
 
 

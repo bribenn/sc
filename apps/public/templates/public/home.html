@@ -36,7 +36,7 @@
 		</div>
 		<div>
 			<img class="section_1" src="{% static "public/img/homeback-2@3x.png" %}" alt="geometric lines"/>
-			<a class="demo_btn_small_white right" href="/demo_request">REQUEST A DEMO</a>
+			<a id="top_btn" class="demo_btn_small_white right" href="/demo_request">REQUEST A DEMO</a>
 		</div>
 	</div>
 	<div class="section_2 container">
@@ -128,7 +128,8 @@
 				<form action="/login" method="post">
 					{% csrf_token %}
 					<label class=".browser-default">Please Enter The Password</label>
-					<input id="input" class="browser-defaults" type="password" name="password">
+					<input type="hidden" name="here" value="/">
+					<input id="input" type="password" name="password">
 					{% if messages %}
 						{% for message in messages %}
 							<p>{{message}}</p>

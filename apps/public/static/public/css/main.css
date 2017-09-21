@@ -44,8 +44,16 @@ nav {
   color: black; }
 
 /*Modal Login*/
-#input input[type=text]:focus {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000; }
+input#input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #385072;
+  box-shadow: 0 1px 0 0 #385072; }
+
+label {
+  color: #385072;
+  font-size: 18px;
+  font-family: HelveticaNeue, sans-serif; }
+
+.modal-action {
+  color: #385072; }
 
 /*# sourceMappingURL=main.css.map */

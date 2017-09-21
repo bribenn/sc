@@ -19,7 +19,7 @@
 <body>
 	<nav class="white z-depth-0">
 		<div class="nav-wrapper container">
-		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
+		  <a href="/home_2"><img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/></a>
 		  <ul class="right hide-on-med-and-down">
 		    <li><a class="active" href="/features">Features</a></li>
 		    <li><a href="/expertise">Expertise</a></li>
@@ -41,7 +41,7 @@
 		<h3 class="center">From small details to large initiatives</h3>
 		<img class="absolute" src="{% static "private/img/arrows.png" %}" alt="arrows"/>
 		<div class="row row-height arrows">
-			<div class="col s3">
+			<div class="col s3 first">
 				<h3>Process</h3>
 				<ul>
 					<li>Single unified system</li>
@@ -49,7 +49,7 @@
 					<li>Inventory tracking</li>
 				</ul>	
 			</div>
-			<div class="col s3">
+			<div class="col s3 second">
 				<h3>Monitor</h3>
 				<ul>
 					<li>Real-time monitoring</li>
@@ -57,7 +57,7 @@
 					<li>Enhanced due diligence</li>
 				</ul>	
 			</div>
-			<div class="col s3">
+			<div class="col s3 third">
 				<h3>Control</h3>
 				<ul>
 					<li>Automatic CTR generation</li>
@@ -65,7 +65,7 @@
 					<li>Automatic case filing</li>
 				</ul>	
 			</div>
-			<div class="col s3">
+			<div class="col s3 fourth">
 				<h3>Scale</h3>
 				<ul>
 					<li>ACH/cashless payment</li>
@@ -90,18 +90,18 @@
 		</div>
 		<div class="divider"></div>
 		<div class="col s7">
-			<h1>image carousel</h1>
+			
 		</div>
 	</div>
 	<div class="divider"></div>
 	<div class="row container section" id="monitor">
 		<div class="col s7">
-			<h1>image carousel?</h1>
+			
 		</div>
 		<div class="col s5 ar">
 			<h3>Monitor</h3>
 			<h6>Proactive Transparency</h6>
-			<p>Our platform constantly monitors all transactions, and if we notice an inconsistency or potential risk, we both act and notify you immediately. You recieve automated alerts of tax liabilities and inventory discrepancies so that you can proceed to work with dispensaries in only the safest manner.</p>
+			<p class="right">Our platform constantly monitors all transactions, and if we notice an inconsistency or potential risk, we both act and notify you immediately. You recieve automated alerts of tax liabilities and inventory discrepancies so that you can proceed to work with dispensaries in only the safest manner.</p>
 			<ul>
 				<li>Real-time monitoring</li>
 				<li>Real-time communication</li>
@@ -125,18 +125,18 @@
 			</ul>
 		</div>
 		<div class="col s7">
-			<h1>image carousel?</h1>
+			
 		</div>
 	</div>
 	<div class="divider"></div>
 	<div class="row container section" id="scale">
 		<div class="col s7">
-			<h1>image carousel?</h1>
+			
 		</div>
 		<div class="col s5 ar">
 			<h3>Scale</h3>
 			<h6>Cloud based solutions</h6>
-			<p>Because Shield Compliance is a cloud-based platform, we can integrate across multiple accounts simultaneously with ease. Our simple scalability promotes the rapid expansion and growth of high risk cash intensive business banking. We constantly update our platform to stay ahead of upcoming changes to banking regulations. For further accuracy, we’ve partnered with an excellent POS system that helps us to carefully monitor and record all transactions from start to finish.</p>
+			<p class="right">Because Shield Compliance is a cloud-based platform, we can integrate across multiple accounts simultaneously with ease. Our simple scalability promotes the rapid expansion and growth of high risk cash intensive business banking. We constantly update our platform to stay ahead of upcoming changes to banking regulations. For further accuracy, we’ve partnered with an excellent POS system that helps us to carefully monitor and record all transactions from start to finish.</p>
 			<ul>
 				<li>ACH &amp; cashless payment</li>
 				<li>Cloud technology</li>
@@ -153,18 +153,22 @@
 			<img src="{% static "private/img/shieldpaylogo@3x.png" %}" alt="shield pay">
 			<p>Shield Pay connects consumers to CIB locations via a secure ACH connection. ACH enables easy, repeated, cashless payments, adding convienance for both consumers and CIB locations. The Shield Pay application grants users a unique identifying pin number that allows them to pay at participating CIB locations</p>
 		</div>
-		<div class="col s6">
-			<h1>image carousel?</h1>
+		<div class="col s6 placeholder">
+			
 		</div>
 	</div>
 	<div class="divider"></div>
-	<div class="row container section">
+	<div class="row container section audit">
 		<div class="col s6">
-			<h1>image carousel?</h1>
+			<div class="placeholder">
+				
+			</div>
 		</div>
 		<div class="col s6">
-			<h3>One-Click Audit Preparation</h3>
-			<p>Audit preparation can be difficult and time-consuming, but Shield Compliance’s system enables banks to automatically generate all necessary auditing summary materials with a single click. These files become ready to print and share immediately, removing the hassle of audit preparation.</p>
+			<div class="col s8">
+				<h3>One-Click Audit Preparation</h3>
+				<p>Audit preparation can be difficult and time-consuming, but Shield Compliance’s system enables banks to automatically generate all necessary auditing summary materials with a single click. These files become ready to print and share immediately, removing the hassle of audit preparation.</p>
+			</div>
 		</div>
 	</div>
 	<div class="divider"></div>
@@ -173,8 +177,8 @@
 			<h6>Coming Soon</h6>
 			<h3>Internetwork Anonymous Forum</h3>
 		</div>
-		<div class="col s4">
-			<h1>image carousel?</h1>
+		<div class="col s4 placeholder">
+
 		</div>
 		<div class="col s4">
 			<p>Shield will soon have a forum where you can ask anonymous questions that are quickly answered by our professionals as well as a former AML compliance officer. Previous questions will be publicly available for your reference. </p>

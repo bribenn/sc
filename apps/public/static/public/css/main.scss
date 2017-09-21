@@ -66,12 +66,20 @@ nav {
 
 
 /*Modal Login*/
-#input input[type=text]:focus {
-	border-bottom: 1px solid #000;
-	box-shadow: 0 1px 0 0 #000;
+input#input[type=password]:focus:not([readonly]) {
+	border-bottom: 1px solid $shield-logo-blue;
+	box-shadow: 0 1px 0 0 $shield-logo-blue;
 }
 
+label {
+	color: $shield-logo-blue;
+	font-size: 18px;
+	font-family: $font-stack;
+}
 
+.modal-action {
+	color: $shield-logo-blue;
+}
 
 
 

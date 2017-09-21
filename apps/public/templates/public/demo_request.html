@@ -21,7 +21,7 @@
 		<div class="fill">
 			<nav class="transparent z-depth-0 demo">
 				<div class="container nav-wrapper">
-					<img class="brand-logo" src="{% static "public/img/shieldnavlogo.png" %}" alt="logo"/>
+					<a href="/"><img class="brand-logo" src="{% static "public/img/shieldnavlogo.png" %}" alt="logo"/></a>
 					<ul class="right hide-on-med-and-down">
 						<!-- Modal Trigger -->
 						<li><a class="modal-trigger" href="#login">Login</a></li>
@@ -36,7 +36,7 @@
 		<div class="row">
 			<div class="col s7 form">
 				<h1>Request a demo</h1>
-				<form role="form" action="/demoEmail" method="post">
+				<form role="form" action="http://formspree.io/bri.bennett89@gmail.com" method="post">
 					{% csrf_token %}
 					<div class="form-actions">
 						<label>Name</label>
@@ -49,7 +49,7 @@
 						<input type="textarea" name="phone">
 						<label>Interest in Platform</label>
 						<textarea></textarea>
-						<input id="submit" type="submit" name="Submit">
+						<input id="submit" type="submit">
 					</div>
 				</form>
 			</div>
@@ -106,20 +106,23 @@
 </body>
 </html>
 
-
-
 <!-- Modal Structure -->
-<div id="login" class="modal">
-	<div class="modal-content">
-		<!-- login form -->
-		<form action="/login" method="post">
-			{% csrf_token %}
-			<label>Please Enter The Password</label>
-			<input type="password" name="password">
-			<div class="modal-footer">
-				<input type="hidden" name="next" value="public/demo_request.html" />
-				<button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Login</button>
+		<div id="login" class="modal">
+			<div class="modal-content">
+				<!-- login form -->
+				<form action="/login" method="post">
+					{% csrf_token %}
+					<label class=".browser-default">Please Enter The Password</label>
+					<input type="hidden" name="here" value="/demo_request">
+					<input id="input" type="password" name="password">
+					{% if messages %}
+						{% for message in messages %}
+							<p>{{message}}</p>
+						{%endfor%}
+					{% endif %}
 			</div>
-		</form>
-	</div>
-</div>
+			<div class="modal-footer">
+				<input type="submit" value="LOGIN" class="modal-action btn-flat">
+				</form>
+			</div>
+		</div>

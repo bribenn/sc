@@ -34,6 +34,9 @@ nav ul a:hover {
   color: #afaeaf; }
 
 nav {
+  padding: 10px 0px 61px 0px; }
+
+nav.home {
   padding: 43px 0px 100px 0px; }
 
 .background-cover {
@@ -54,7 +57,8 @@ nav {
   height: 100%; }
 
 .footer-bar {
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  padding: 8px; }
   .footer-bar li {
     display: inline;
     padding: 15px; }

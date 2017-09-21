@@ -45,6 +45,10 @@ nav ul a:hover {
 }
 
 nav {
+	padding: 10px 0px 61px 0px;
+}
+
+nav.home {
 	padding: 43px 0px 100px 0px;
 }
 
@@ -72,6 +76,7 @@ nav {
 
 .footer-bar {
 	margin: 10px 0px; 
+	padding: 8px;
 	li {
 		display: inline;
 		padding: 15px;

@@ -15,8 +15,8 @@ h1:nth-child(2) {
   margin-left: 150px; }
 
 a.demo_btn_small_white.right {
-  margin-right: 260px;
-  margin-top: -120px; }
+  margin-right: 435px;
+  margin-top: -125px; }
 
 .demo_btn_small_blue {
   border: 1px solid #385072;
@@ -24,11 +24,19 @@ a.demo_btn_small_white.right {
   font-size: 13px;
   padding: 3px 6px; }
 
+.demo_btn_small_blue:hover {
+  background-color: #385072;
+  color: white; }
+
 .demo_btn_small_white {
   border: 1px solid white;
   color: white;
   font-size: 13px;
   padding: 3px 6px; }
+
+.demo_btn_small_white:hover {
+  background-color: white;
+  color: #385072; }
 
 .section_2 {
   padding: 60px 0px;
@@ -77,6 +85,14 @@ a.demo_btn_small_white.right {
     padding-top: 3%; }
 
 #home-bar a {
+  color: #385072; }
+
+#top_btn {
+  position: relative;
+  z-index: 1; }
+
+#top_btn:hover {
+  background-color: white;
   color: #385072; }
 
 /*# sourceMappingURL=home.css.map */

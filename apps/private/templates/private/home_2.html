@@ -10,16 +10,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-	<!-- My Javascript file -->
-	<script src="{% static 'private/javascript/home_2.js' %}"></script>
 	<!-- my css file -->
 	<link rel="stylesheet" href="{% static 'private/css/home_2.css' %}"media="screen" title="no title"  charset="utf-8">
 	<link rel="stylesheet" href="{% static 'private/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
 </head>
 <body>
-	<nav class="white z-depth-0">
+	<nav class="white z-depth-0 home">
 		<div class="nav-wrapper container">
-		  <img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/>
+		  <a href="/"><img class="brand-logo" src="{% static "private/img/shieldnavlogo.png" %}" alt="logo"/></a>
 		  <ul class="right hide-on-med-and-down">
 		    <li><a href="/features">Features</a></li>
 		    <li><a href="/expertise">Expertise</a></li>
@@ -35,9 +33,9 @@
 	</div>
 	<div>
 		<img class="section_1" src="{% static "private/img/background-base@3x.png" %}" alt="geometric lines"/>
-		<a class="learn_btn_small_blue right" href="/about">learn more</a>
+		<a id="top_btn" class="learn_btn_small_blue right" href="#section_2">learn more</a>
 	</div>
-	<div class="fill section_2">
+	<div class="fill section_2" id="section_2">
 		<div class="container">
 			<img src="{% static "private/img/shieldglobe@3x.png" %}" alt="shield globe"/>
 			<h2 class="container">Proactive transparent compliance</h2>
@@ -161,4 +159,6 @@
 	</div>
 
 </body>
+<!-- My Javascript file -->
+	<script src="{% static 'private/javascript/home_2.js' %}"></script>
 </html>
