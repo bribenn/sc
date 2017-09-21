@@ -65,21 +65,25 @@ nav.home {
   .footer-bar a {
     text-transform: uppercase; }
 
-.footer img {
-  width: 280px; }
-.footer p {
-  font-size: 13px;
-  color: #3f4b5c;
-  margin: auto; }
-.footer a {
-  color: black;
-  text-decoration: underline;
-  font-size: 13px; }
-.footer .col div {
-  margin: -38px 0px 0px 66px; }
-.footer .footer-middle {
-  text-align: center;
-  color: black; }
+.footer {
+  margin-bottom: 20px; }
+  .footer img {
+    width: 280px; }
+  .footer p {
+    font-size: 13px;
+    color: #3f4b5c;
+    margin: auto; }
+  .footer a {
+    color: black;
+    text-decoration: underline;
+    font-size: 13px; }
+  .footer .col div {
+    margin: -38px 0px 0px 66px; }
+  .footer .footer-middle {
+    text-align: center;
+    color: black; }
+  .footer .email {
+    text-decoration: none; }
 
 #private-bar a {
   color: white; }

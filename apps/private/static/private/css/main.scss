@@ -87,6 +87,7 @@ nav.home {
 }
 
 .footer {
+	margin-bottom: 20px;
 	img {
 		width: 280px;
 	}
@@ -106,6 +107,9 @@ nav.home {
 	.footer-middle {
 		text-align: center;
 		color: black;
+	}
+	.email {
+	text-decoration: none;
 	}
 }
 
