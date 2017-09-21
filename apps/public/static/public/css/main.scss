@@ -81,5 +81,9 @@ label {
 	color: $shield-logo-blue;
 }
 
-
+div#login_errors p {
+	font-size: 14px;
+	color: red;
+	font-family: $font-stack;
+}
 

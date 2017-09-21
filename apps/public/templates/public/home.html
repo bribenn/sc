@@ -10,8 +10,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-	<!-- My Javascript file -->
-	<script src="{% static 'public/javascript/home.js' %}"></script>
 	<!-- my css files -->
 	<link rel="stylesheet" href="{% static 'public/css/home.css' %}"media="screen" title="no title"  charset="utf-8">
 	<link rel="stylesheet" href="{% static 'public/css/main.css' %}"media="screen" title="no title"  charset="utf-8">
@@ -92,7 +90,7 @@
 		<!-- Modal Trigger -->
 		<ul class="center footer-bar" id="home-bar">
 			<li><a class="modal-trigger center" href="#login">LOGIN</a></li>
-			<li><a href="#!">CONTACT</a></li>
+			<li><a href="/demo_request">CONTACT</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
@@ -125,21 +123,21 @@
 		<div id="login" class="modal">
 			<div class="modal-content">
 				<!-- login form -->
-				<form action="/login" method="post">
+				<form action="/login" method="post" id="login-form">
 					{% csrf_token %}
 					<label class=".browser-default">Please Enter The Password</label>
-					<input type="hidden" name="here" value="/">
+					<input type="hidden" name="here" value="/" id="here">
 					<input id="input" type="password" name="password">
-					{% if messages %}
-						{% for message in messages %}
-							<p>{{message}}</p>
-						{%endfor%}
-					{% endif %}
-			</div>
-			<div class="modal-footer">
-				<input type="submit" value="LOGIN" class="modal-action btn-flat">
+					<div id="login_errors">
+					</div>
+					<div class="modal-footer">
+						<input type="submit" value="LOGIN" class="modal-action btn-flat">
+					</div>
 				</form>
 			</div>
+			
 		</div>
 </body>
+	<!-- My Javascript file -->
+	<script src="{% static 'public/javascript/home.js' %}"></script>
 </html>

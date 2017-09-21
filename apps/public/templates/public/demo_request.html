@@ -44,11 +44,11 @@
 						<label>Company</label>
 						<input type="textarea" name="company">
 						<label>Email</label>
-						<input type="textarea" name="from_email">
+						<input type="textarea" name="email">
 						<label>Phone</label>
 						<input type="textarea" name="phone">
 						<label>Interest in Platform</label>
-						<textarea></textarea>
+						<textarea name="interest"></textarea>
 						<input id="submit" type="submit">
 					</div>
 				</form>
@@ -75,7 +75,7 @@
 	<!-- Modal Trigger -->
 		<ul class="center footer-bar fill" id="demo-bar">
 			<li><a class="modal-trigger center" href="#login">LOGIN</a></li>
-			<li><a href="#!">CONTACT</a></li>
+			<li><a href="/demo_request">CONTACT</a></li>
 		</ul>
 	</div>
 	<div class="footer container">
@@ -110,19 +110,17 @@
 		<div id="login" class="modal">
 			<div class="modal-content">
 				<!-- login form -->
-				<form action="/login" method="post">
+				<form action="/login" method="post" id="login-form">
 					{% csrf_token %}
 					<label class=".browser-default">Please Enter The Password</label>
-					<input type="hidden" name="here" value="/demo_request">
+					<input type="hidden" name="here" value="/" id="here">
 					<input id="input" type="password" name="password">
-					{% if messages %}
-						{% for message in messages %}
-							<p>{{message}}</p>
-						{%endfor%}
-					{% endif %}
-			</div>
-			<div class="modal-footer">
-				<input type="submit" value="LOGIN" class="modal-action btn-flat">
+					<div id="login_errors">
+					</div>
+					<div class="modal-footer">
+						<input type="submit" value="LOGIN" class="modal-action btn-flat">
+					</div>
 				</form>
 			</div>
+			
 		</div>

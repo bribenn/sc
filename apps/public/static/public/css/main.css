@@ -56,4 +56,9 @@ label {
 .modal-action {
   color: #385072; }
 
+div#login_errors p {
+  font-size: 14px;
+  color: red;
+  font-family: HelveticaNeue, sans-serif; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib import messages
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from . import forms
 from forms import DemoForm
 from django.core.mail import send_mail, BadHeaderError
+
 
 # Create your views here.
 def index(request):
@@ -20,8 +21,15 @@ def login(request):
 
 		if request.POST.get('password') == password:
 			request.session['logged_in'] = True
-			return render(request, 'private/home_2.html')
+			# return render(request, 'private/home_2.html')
+			return JsonResponse({'logged_in':True})
 
-		messages.add_message(request, messages.INFO, "sorry, wrong password", extra_tags="login")
-	return redirect(here)
+		# messages.add_message(request, messages.INFO, "sorry, wrong password", extra_tags="login")
+	# return redirect(here)
+	return JsonResponse({
+		'error': {
+			'message': "Sorry, wrong password.",
+			'form': 'login'
+		}
+	})
 
