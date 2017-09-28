@@ -72,19 +72,14 @@ h6 {
     margin-top: 1px; }
 
 .s7 {
-  height: 335px;
-  background-color: gray; }
+  height: 335px; }
 
-.placeholder {
-  background-color: gray;
-  height: 335px;
-  margin: auto; }
+.slider .indicators .indicator-item.active {
+  background-color: #385072; }
 
 #additional_features h3 {
   text-align: center;
   margin-bottom: 50px; }
-#additional_features .placeholder {
-  width: 335px; }
 
 .s6 img {
   width: 235px; }
@@ -93,10 +88,13 @@ h6 {
   margin-top: 15px;
   width: 80%; }
 
+.row .col.s6.one-click {
+  padding-left: 6.75rem; }
+
 .audit .s6 p {
   width: 100; }
 
-.audit div.placeholder {
+.audit div {
   width: 335px; }
 
 #coming_soon h3 {
