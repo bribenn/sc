@@ -15,10 +15,11 @@ nav ul a {
 
 nav {
   padding: 43px 0px 100px 0px; }
+  nav img {
+    width: 270px; }
 
 .demo_btn {
   border: 1px solid white;
-  border-radius: 5px;
   height: 30px; }
 
 .footer-bar {
