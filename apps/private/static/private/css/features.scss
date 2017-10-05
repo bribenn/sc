@@ -142,7 +142,7 @@ h6 {
 }
 
 #coming_soon {
-	h3 {
+	h3:nth-of-type(1) {
 		text-align: right;
 		margin-left: 10px;
 		margin-top: 5px;
@@ -161,6 +161,16 @@ h6 {
 	}
 
 }
+
+.slider.col.s4.valign-wrapper {
+	background-color: #aeaeaf;
+	color: $shield-logo-blue;
+	#center-placeholder {
+		margin: auto;
+	}
+}
+
+
 
 
 
