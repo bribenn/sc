@@ -134,7 +134,7 @@ h6 {
 }
 
 .audit .s6 p {
-	width: 100;
+	width: 100%;
 }
 
 .audit div {
@@ -163,13 +163,20 @@ h6 {
 }
 
 .slider.col.s4.valign-wrapper {
-	background-color: #aeaeaf;
-	color: $shield-logo-blue;
+	color: white;
+	background-color: gray;
 	#center-placeholder {
 		margin: auto;
 	}
 }
 
+.slider .slides {
+	background-color: transparent;
+	li img {
+		background-size: 100% auto;
+    	background-repeat: no-repeat;
+	}
+}
 
 
 

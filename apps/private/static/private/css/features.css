@@ -92,7 +92,7 @@ h6 {
   padding-left: 6.75rem; }
 
 .audit .s6 p {
-  width: 100; }
+  width: 100%; }
 
 .audit div {
   width: 335px; }
@@ -112,9 +112,15 @@ h6 {
   margin-top: 100px; }
 
 .slider.col.s4.valign-wrapper {
-  background-color: #aeaeaf;
-  color: #385072; }
+  color: white;
+  background-color: gray; }
   .slider.col.s4.valign-wrapper #center-placeholder {
     margin: auto; }
+
+.slider .slides {
+  background-color: transparent; }
+  .slider .slides li img {
+    background-size: 100% auto;
+    background-repeat: no-repeat; }
 
 /*# sourceMappingURL=features.css.map */
